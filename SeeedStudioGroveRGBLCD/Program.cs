@@ -16,7 +16,7 @@ namespace SeeedStudio.Grove.RGBLCD
             mylcd.SetCursor(0, 0); // column, row
             mylcd.setRGB(i, j, k);
             mylcd.noCursor();
-            byte[] message = System.Text.Encoding.UTF8.GetBytes(" Hello Monkey!");
+            byte[] message = System.Text.Encoding.UTF8.GetBytes("  Hello World!");
             mylcd.write(message);
 
             while (true)
@@ -51,12 +51,6 @@ namespace SeeedStudio.Grove.RGBLCD
                     mylcd.setRGB(i, j, k);
                     Thread.Sleep(sleep);
                 }
-                //mylcd.backlight();
-                //mylcd.SetCursor(0, 0); // column, row
-                //mylcd.rightToLeft();
-                //mylcd.scrollDisplayLeft();
-                //mylcd.print(message);
-                //Thread.Sleep(500);
             }
         }
 
